@@ -1,0 +1,33 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+  .form  {
+    width: 400px;
+    padding: 40px;
+    margin: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .name {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* 
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  } */
+  
+  .submit {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0066ff;
+  }
