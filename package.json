@@ -13,6 +13,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@rainbow-me/rainbowkit": "^0.8.0",
+    "coinmarketcap-api": "^3.1.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "ethers": "^5.7.2",

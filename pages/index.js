@@ -1,7 +1,10 @@
 import Image from 'next/image'
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
+// Import the CoinMarketCap API client
+import CoinMarketCap from 'coinmarketcap-api'
+
 import styles from '../styles/Home.module.css'
 // import Navbar from '../components/Navbar/Navbar'
-import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
 import '@rainbow-me/rainbowkit/styles.css'
 import {
   ConnectButton,
@@ -26,6 +29,11 @@ const wagmiClient = createClient({
   autoConnect: true,
   connectors,
   provider,
+})
+
+// / Initialize the CoinMarketCap client with your API key
+const client = new CoinMarketCap({
+  key: '5b670f50-5e7c-4d2e-9281-95ffe75533b9',
 })
 
 export default function IndexPage() {

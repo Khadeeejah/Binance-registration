@@ -1,19 +1,17 @@
-// transfer.js
-
 import React, { useState } from 'react'
 
 // Import the CoinMarketCap API client
 
-// import CoinMarketCap from 'coinmarketcap-api'
+import CoinMarketCap from 'coinmarketcap-api'
 
 // Initialize the CoinMarketCap client with your API key
 const client = new CoinMarketCap({
-  key: 'YOUR_API_KEY',
+  key: '5b670f50-5e7c-4d2e-9281-95ffe75533b9',
 })
 
 // Define the TransferForm component
 const TransferForm = () => {
-  // Use the useState hook to initialize the state object
+  // useState hook to initialize the state object
   const [state, setState] = useState({
     bnbAmount: 0,
     publicAddress: '',
@@ -28,9 +26,7 @@ const TransferForm = () => {
   }
 
   // Define the handleConnect function to connect to the wallet
-  const handleConnect = () => {
-    // TODO: Implement wallet connection logic
-  }
+  const handleConnect = () => {}
 
   // Define the handleSend function to handle the transfer
   const handleSend = async () => {
